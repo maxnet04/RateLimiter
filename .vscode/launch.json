@@ -1,0 +1,13 @@
+{
+    "version": "0.3.0",
+    "configurations": [
+        {
+            "name": "Rate-Limiter",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "./cmd",
+            "env": {}
+        }
+    ]
+}
