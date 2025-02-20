@@ -38,25 +38,32 @@ O rate limiter funciona como um middleware injetado no servidor web.
  
  Crie um arquivo '"config.env' na raiz do projeto com as seguintes configurações: 
  
- •plaintext 
+ ````plaintext 
  
 API_KEY=FCYCLE
 RATE_LIMIT_IP=8
 RATE_LIMIT_TOKEN=10
-BLOCK_DURATION_SECONDS=60 ®*
+BLOCK_DURATION_SECONDS=60 
+```
  
-### Como Utilizar localmente:
 #### Requisitos:
 - [GO](https://golang.org/doc/insttall) 1.17 ou superior
 - [Docker](https://docs.docker.com/get-docker/)
 
+
+
+### Como Utilizar localmente:
+
   1. Clonar o Repositório:~
   ```git clone https://github.com/maxnet04/RateLimiter.git```
 
-  2. Rode o docker para buildar a imagem gerando o container com a aplicação e o redis:
-  ```docker-compose up```
 
-### Como testar localmente:
+  2. Acesse a pasta do app:
+  ```cd ReteLimiter```
+
+  3. Rode o docker para buildar a imagem gerando o container com a aplicação e o redis:
+   ```docker-compose up```
+
 Porta: HTTP server on port :8080
 
 #### Execute o curl abaixo ou use um aplicação client REST para realizar a requisição:
