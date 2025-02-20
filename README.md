@@ -39,10 +39,12 @@ O rate limiter funciona como um middleware injetado no servidor web.
  Crie um arquivo `config.env` na raiz do projeto com as seguintes configurações: 
  
  
-```API_KEY=FCYCLE
+```
+API_KEY=FCYCLE
 RATE_LIMIT_IP=8
 RATE_LIMIT_TOKEN=10
-BLOCK_DURATION_SECONDS=60```
+BLOCK_DURATION_SECONDS=60
+```
  
 #### Requisitos:
 
