@@ -4,7 +4,7 @@
 
 Desenvolver um rate limiter em Go que possa ser configurado para limitar o número máximo de requisições por segundo com base em um endereço IP específico ou em um token de acesso.
 
-## Descnicao
+## Descrição
 
 Este projeto implementa um rate limiter que controla o tráfego de requisições para um serviço web. O rate limiter pode limitar o número de requisições com base em dois critérios: 
 
@@ -28,25 +28,24 @@ O rate limiter funciona como um middleware injetado no servidor web.
  
  ## Exemplos 
  
- **Limitação por IP**: Se configurado para permitir no máximo 5 requisições por segundo por IP, e o IP '192.168.1.1' enviar 6 requisições em um segundo, a sexta requisição será bloqueada. 
+ **Limitação por IP**: Se configurado para permitir no máximo 5 requisições por segundo por IP, e o IP `192.168.11` enviar 6 requisições em um segundo, a sexta requisição será bloqueada. 
  
- **Limitação por Token**: Se um token "FCYCLE* tiver um limite de 10 requisições por segundo e enviar 11 requisições nesse intervalo, a décima primeira será bloqueada. 
+ **Limitação por Token**: Se um token `FCYCLE` tiver um limite de 10 requisições por segundo e enviar 11 requisições nesse intervalo, a décima primeira será bloqueada. 
  
  ## Configuração 
  
- ### Arquivo "config.env* 
+ ### Arquivo `config.env`
  
- Crie um arquivo '"config.env' na raiz do projeto com as seguintes configurações: 
+ Crie um arquivo `config.env` na raiz do projeto com as seguintes configurações: 
  
- ````plaintext 
  
-API_KEY=FCYCLE
+````API_KEY=FCYCLE
 RATE_LIMIT_IP=8
 RATE_LIMIT_TOKEN=10
-BLOCK_DURATION_SECONDS=60 
-```
+BLOCK_DURATION_SECONDS=60 ```
  
 #### Requisitos:
+
 - [GO](https://golang.org/doc/insttall) 1.17 ou superior
 - [Docker](https://docs.docker.com/get-docker/)
 
